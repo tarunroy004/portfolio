@@ -1,0 +1,549 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    text-transform: capitalize;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    /* height: ; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.mousefollwer {
+    display: none;
+    height: 1vh;
+    width: 1vh;
+    position: fixed;
+    z-index: 999;
+    border-radius: 100px;
+    background-color: #000;
+    background-size: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .8s;
+    filter: drop-shadow(0 0 10px #000);
+}
+
+#nav {
+    height: 15vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav #navnm img {
+    height: 50px;
+    transition: all 0.2s;
+}
+
+#nav #navnm img:hover {
+    opacity: 1;
+    scale: 1.05;
+}
+
+#navdet {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+#navdet a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#navdet a:hover {
+    /* filter: drop-shadow(2px 2px 0.2px rgb(167, 167, 167)); */
+    border-bottom: 2px solid #000;
+}
+
+#navdet i {
+    margin-left: 2vw;
+    font-size: 20px;
+    align-self: center;
+    position: fixed;
+    top: 6.25vh;
+    right: 5vw;
+    transition: all ease-in-out 0.1s;
+}
+
+#navdet i:hover {
+    scale: 1.2;
+}
+
+
+#main {
+    width: 100vw;
+    height: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#name {
+    height: 85vh;
+    width: fit-content;
+    padding: 17vh 8vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(168, 168, 240); */
+}
+
+.nm {
+    width: fit-content;
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+}
+
+.im p {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.nm h1 {
+    cursor: crosshair;
+    color: #fff;
+    -webkit-text-stroke: 2px #000;
+    font-size: 13vw;
+    margin-right: 0.8vw;
+    letter-spacing: -5px;
+    line-height: 0.8;
+    transition: all ease-in-out .25s;
+}
+
+.ttt:hover {
+    -webkit-text-stroke: 2px rgb(255, 196, 0);
+    color: #fff;
+    filter: drop-shadow(8px 8px 1px #000);
+}
+
+.kkk:hover {
+    -webkit-text-stroke: 2px rgb(0, 119, 255);
+    color: #fff;
+    filter: drop-shadow(8px 8px 1px #000);
+}
+
+.rrr:hover {
+    -webkit-text-stroke: 2px rgb(255, 98, 0);
+    color: #fff;
+    filter: drop-shadow(8px 8px 1px #000);
+}
+
+#firstnm {
+    width: 100%;
+    display: flex;
+}
+
+#lastnm {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hir {
+    width: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 50px;
+    margin: 15% 0;
+}
+
+#hir #btn {
+    width: fit-content;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: 0.5s;
+}
+
+#hir #btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#aboutme {
+    height: 100vh;
+    width: 100%;
+    padding: 12vw 15vw;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15vh;
+}
+
+span {
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+span2 {
+    -webkit-text-stroke: 1px #000;
+    color: #fff;
+}
+
+span:hover {
+    -webkit-text-stroke: 1px #fff;
+}
+
+#aboutme h1 {
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#aboutme h1:hover {
+    color: #fff;
+}
+
+
+#aboutme img {
+    height: 400px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 10px #000;
+}
+
+#heading img:hover {
+    box-shadow: 2px 2px 10px #000;
+    scale: 1.01;
+}
+
+.content {
+    width: 80%;
+    margin-left: 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+
+.content p {
+    text-transform: capitalize;
+    line-height: 25px;
+    letter-spacing: -0.9px;
+    font-size: 1.5vw;
+    opacity: .95;
+}
+
+.content p:hover {
+    opacity: 1;
+}
+
+#aboutme #btn {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    align-self: flex-end;
+    margin: 2.5vw 1vw 0 12vw;
+    transition: 0.5s;
+}
+
+
+#aboutme #btn:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.skills {
+    width: 100%;
+    padding: 5vw 8vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills h1:hover {
+    color: #fff;
+}
+
+.skills h1 {
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 4vw;
+}
+
+
+.card-container,
+.card-container2,
+.card-container3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 1rem;
+    border-radius: 9px;
+    /* margin: 1rem; */
+    cursor: pointer;
+}
+
+.card img {
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+}
+
+.card-a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0 1.8vw;
+    text-transform: capitalize;
+
+}
+
+.card p {
+    color: #000;
+    font-size: 0.8rem;
+    opacity: 0.9;
+    margin: 0 0 0 1.8vw;
+    text-transform: capitalize;
+
+}
+
+.card-container3 img {
+    height: 140px;
+    width: 140px;
+}
+
+#img1 {
+    height: 175px;
+    width: 175px;
+    margin: -8px 0 0 0;
+}
+
+#img2 {
+    height: 180px;
+    width: 180px;
+    margin: -11px 0 0 0;
+}
+
+#img3 {
+    height: 150px;
+    width: 150px;
+}
+
+#myjourney {
+    width: 100%;
+    /* height: 100vh; */
+    padding: 5vw 8vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+#myjourney h1 {
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 4vw;
+    width: fit-content;
+}
+
+#myjourney h1:hover {
+    color: #fff;
+}
+
+.precollege,
+.hsecondary,
+.secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+}
+
+.links {
+    height: 8vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 8vw;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 2.5vw;
+    text-transform: capitalize;
+}
+
+.footerspace {
+    border-top: 1px solid #000;
+    width: 80vw;
+    margin: 2vw 10vw 10vw 10vw;
+    opacity: 0.3;
+}
+.footerspace2 {
+    border-top: 1px solid #000;
+    width: 80vw;
+    margin: 10vw 10vw 2vw 10vw;
+    opacity: 0.3;
+}
+
+
+@media (max-width: 600px) {
+    #nav a {
+        display: none;
+    }
+
+    #navnm img {
+        scale: 0.7;
+    }
+
+    #navdet i {
+        top: 5.4vh;
+    }
+
+    .nm h1 {
+        font-size: 14vw;
+        letter-spacing: 0.5px;
+    }
+
+    .name p {
+        font-size: 4vw;
+    }
+
+    #hir {
+        position: absolute;
+        bottom: -2vh;
+        right: 5vw;
+    }
+
+    #hir #btn {
+        font-size: 2.5vw;
+        font-weight: 700;
+    }
+
+    #aboutme {
+        height: 100vh;
+        width: 100%;
+        padding: 12vw 15vw;
+        display: flex;
+        gap: 5vw;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-bottom: 15vh;
+    }
+
+    #aboutme img {
+        height: 40vw;
+    }
+
+    #aboutme h1 {
+        font-size: 6vw;
+        align-self: flex-start;
+    }
+
+    #aboutme p {
+        font-size: 2.5vw;
+    }
+
+    #aboutme #btn {
+        font-size: 2.5vw;
+        font-weight: 700;
+        margin-top: 7vw;
+    }
+
+    .skills h1 {
+        font-size: 10vw;
+    }
+    .card {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 5px;
+        padding: 2px;
+        border-radius: 9px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .card img {
+        height: 50px;
+        width: 50px;
+        background-size: cover;
+    }
+
+    #img1 {
+        height: 55px;
+        width: 55px;
+        margin: -2.8px 0 0 0;
+    }
+    #img2 {
+        height: 60px;
+        width: 60px;
+        margin: -6px 0 0 0;
+    }
+    
+    #img3 {
+        height: 50px;
+        width: 50px;
+    }
+
+    .card-a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 0 0 1.8vw;
+        text-transform: capitalize;
+
+    }
+
+    .card p {
+        color: #000;
+        font-size: 15px;
+        opacity: 0.9;
+        margin: 0 0 0 1.8vw;
+        text-transform: capitalize;
+    }
+
+    #myjourney h1 {
+        font-size: 10vw;
+    }
+
+    .links {
+        height: 10vw;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 8vw 8vw;
+    }
+    
+    .links a {
+        text-decoration: none;
+        font-size: 5vw;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+}
